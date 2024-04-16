@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F3F4F6;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container,
+#screen {
+    border-radius: 0.6rem;
+}
+
+.container {
+    width: 38rem;
+    padding: 2rem;
+    border: 0.1rem solid black;
+}
+
+#screen {
+    height: 13rem;
+    margin-bottom: 2rem;
+    position: relative;
+    border: 0.1rem solid black;
+}
+
+input {
+    outline: none;
+    padding: 0;
+    max-width: calc(100% - 0.8rem);
+    text-align: end;
+    border: none;
+    caret-color: #2933F5;
+    background-color: transparent;
+}
+
+#error-message {
+    position: absolute;
+    font-size: 1.2rem;
+    color: red;
+    display: none;
+    bottom: 1rem;
+    right: 20%;
+}
+
+/* input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+input,
+p {
+    transition: all 0.5s;
+    margin: 0;
+    position: absolute;
+    right: 0.8rem;
+}
+
+.little-op,
+.big-op {
+    top: 40%;
+}
+
+.little-res,
+.big-res {
+    bottom: 0rem;
+}
+
+.little-op {
+    font-size: 2rem;
+    color: #707070;
+}
+
+.little-res {
+    font-size: 2rem;
+    color: #707070;
+}
+
+.big-op {
+    font-size: 4rem;
+    color: #000;
+}
+
+.big-res {
+    font-size: 4rem;
+    color: #000;
+}
+
+.buttons {
+    display: grid;
+    grid-template: repeat(5, 7rem) / repeat(4, 7rem);
+    gap: 2rem;
+}
+
+button {
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.6);
+}
+
+button:active {
+    scale: 0.9;
+    box-shadow: 0 0 0.2rem 0;
+}
+
+.bGray {
+    background-color: #E6E7EB;
+}
+
+.bWhite {
+    background-color: #fff;
+}
+
+.bBlue {
+    color: #fff;
+    background-color: #2933F5;
+}
+
+@media screen and (max-width:442px) {
+    body {
+        display: block;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+    }
+
+    .container,
+    #screen {
+        border: none;
+        border-radius: 0.6rem;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #screen {
+        height: 25%;
+    }
+
+    input,
+    p {
+        right: 0rem;
+    }
+
+    .buttons {
+        padding: 1rem 0;
+        height: 75%;
+        display: grid;
+        grid-template: repeat(5, calc(20% - 5%)) / repeat(4, calc(26% - 4%));
+        justify-content: space-between;
+        gap: 5% 4%;
+    }
+
+    .little-op,
+    .big-op {
+        top: 50%;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .buttons {
+        height: 75%;
+        display: grid;
+        font-size: 1rem;
+        grid-template: repeat(5, calc(20% - 5%)) / repeat(4, calc(26% - 9%));
+        justify-content: space-between;
+        gap: 5% 3%;
+    }
+
+    .little-op,
+    .big-op {
+        top: 2.8rem;
+    }
+
+    .little-op,
+    .little-res {
+        font-size: 1.8rem;
+    }
+
+    .big-op,
+    .big-res {
+        font-size: 3.6rem;
+    }
+}

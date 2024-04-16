@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5cd1ea71f1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="Assets/icons/solar--calculator-minimalistic-bold-duotone.png" sizes="32x32"
+        type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="screen">
+            <input type="text" id="op" class="big-op" maxlength="12" pattern="[0-9\+\-\*\/\%]+
+" title="Veuillez entrer des nombres valides." autocomplete="off" readonly>
+            <span id="error-message">Veuillez entrer des nombres valides.</span>
+            <p id="result" class="little-res"></p>
+        </div>
+        <div class="buttons">
+            <button class="ac bGray">AC</button>
+            <button class="numbers bGray pourcent" value="%"><i class="fa-solid fa-percent"></i></button>
+            <button class="del bGray"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="numbers bGray divide" value="/"><i class="fa-solid fa-divide"></i></button>
+            <button class="numbers bWhite" value="7">7</button>
+            <button class="numbers bWhite" value="8">8</button>
+            <button class="numbers bWhite" value="9">9</button>
+            <button class="numbers bGray mult" value="*"><i class="fa-solid fa-xmark"></i></button>
+            <button class="numbers bWhite" value="4">4</button>
+            <button class="numbers bWhite" value="5">5</button>
+            <button class="numbers bWhite" value="6">6</button>
+            <button class="numbers bGray minus" value="-"><i class="fa-solid fa-minus"></i></button>
+            <button class="numbers bWhite" value="1">1</button>
+            <button class="numbers bWhite" value="2">2</button>
+            <button class="numbers bWhite" value="3">3</button>
+            <button class="numbers bGray plus" value="+"><i class="fa-solid fa-plus"></i></button>
+            <button class="numbers bWhite" value="00">00</button>
+            <button class="numbers bWhite" value="0">0</button>
+            <button class="numbers bWhite">,</button>
+            <button class="bBlue"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
