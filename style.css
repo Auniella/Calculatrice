@@ -186,7 +186,7 @@ button:active {
         height: 75%;
         display: grid;
         font-size: 1rem;
-        grid-template: repeat(5, calc(20% - 7%)) / repeat(4, calc(26% - 5%));
+        grid-template: repeat(5, calc(20% - 4%)) / repeat(4, calc(26% - 5%));
         justify-content: space-between;
     }
 
