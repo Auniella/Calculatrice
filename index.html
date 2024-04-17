@@ -14,8 +14,8 @@
 <body>
     <div class="container">
         <div id="screen">
-            <input type="text" id="op" class="big-op" maxlength="12" pattern="[0-9\+\-\*\/\%]+
-" title="Veuillez entrer des nombres valides." autocomplete="off" readonly>
+            <input type="text" id="op" class="big-op" maxlength="12" pattern="[0-9\.\+\-\*\/\%]+
+" title="Veuillez entrer des nombres valides." autocomplete="off">
             <span id="error-message">Veuillez entrer des nombres valides.</span>
             <p id="result" class="little-res"></p>
         </div>
@@ -38,7 +38,7 @@
             <button class="numbers bGray plus" value="+"><i class="fa-solid fa-plus"></i></button>
             <button class="numbers bWhite" value="00">00</button>
             <button class="numbers bWhite" value="0">0</button>
-            <button class="numbers bWhite">,</button>
+            <button class="numbers bWhite" value=".">,</button>
             <button class="bBlue"><i class="fa-solid fa-equals"></i></button>
         </div>
     </div>

@@ -31,7 +31,7 @@ function equals() {
 
 //Erreur mauvaise entrée
 function badEntry() {
-  if (!/^[0-9\+\-\*\/\%]+$/.test(input.value)) {
+  if (!/^[0-9\.\+\-\*\/\%]+$/.test(input.value)) {
     errorMessage.style.display = "inline";
     setTimeout(() => {
       errorMessage.style.display = "none";
