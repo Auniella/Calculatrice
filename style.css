@@ -182,17 +182,17 @@ button:active {
 
 @media screen and (max-width:380px) {
     .buttons {
+        color: #000;
         height: 75%;
         display: grid;
         font-size: 1rem;
-        grid-template: repeat(5, calc(20% - 4%)) / repeat(4, calc(26% - 10%));
+        grid-template: repeat(5, calc(20% - 6%)) / repeat(4, calc(26% - 7%));
         justify-content: space-between;
-        gap: 5% 3%;
     }
 
     .little-op,
     .big-op {
-        top: 2.5rem;
+        top: 2.6rem;
     }
 
     .little-op,

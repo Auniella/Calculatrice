@@ -22,6 +22,12 @@ function equals() {
   ope.classList.remove("big-op");
   res.classList.add("big-res");
   res.classList.remove("little-res");
+  const audio = new Audio("Assets/sounds/espace machine à écrire.mp3");
+  audio.play();
+  setTimeout(() => {
+    audio.pause();
+    audio.currentTime = 0;
+  }, 1000);
   input.disabled = true;
   del.disabled = true;
   numbers.forEach((number) => {
@@ -45,7 +51,7 @@ function badEntry() {
 numbers.forEach((number) => {
   number.addEventListener("click", () => {
     input.value += number.value;
-    const audio = new Audio("");
+    const audio = new Audio("Assets/sounds/touche machine à écrire.mp3");
     audio.play();
     setTimeout(() => {
       audio.pause();
